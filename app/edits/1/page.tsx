@@ -5,9 +5,9 @@ export default function Home() {
     <main className="text-center">
       <h1>Outcome 4 Reflection</h1>
       <div>
-        <p>Nothing here yet. Press Save to continue!</p>
+        <p className="add">Through the course of ENGL 131, I’ve demonstrated my mastery in outcome 4. </p>
       </div>
-      <Link href="/edits/1"><button>Save</button></Link>
+      <Link href="/edits/2"><button>Save</button></Link>
     </main>
   );
 }

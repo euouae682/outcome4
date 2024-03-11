@@ -2,32 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: rgb(240, 240, 240);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+main {
+  text-align: center;
+  padding-top: 3%;
+  width: 66%;
+  margin: auto;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 20px;
+  display: inline;
+}
+
+div {
+  text-align: left;
+  border: 2px solid rgb(222, 222, 222);
+  background-color: rgb(233, 233, 233);
+  margin-top: 36px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+button {
+  margin-top: 36px;
+  padding: 10px 20px;
+  background-color: rgb(218, 218, 218);
+  transition-property: all;
+  transition-duration: 200ms;
+  border-radius: 8px;
+  font-size: 20px;
+  filter: drop-shadow(4px 4px 4px rgb(198, 198, 198));
+}
+
+button:hover {
+  background-color: rgb(208, 208, 208);
+}
+
+.add {
+  color: blue;
+}
+
+.remove {
+  color: red;
+  text-decoration: line-through;
+}
+
+.note {
+  font-size: 12px;
 }
